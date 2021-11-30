@@ -11,11 +11,11 @@ hosts=(10.10.0.1_mik0.host_22 \
        10.10.8.1_mik8.host_22 \
        10.10.9.1_mik9.host_22 )
 # bash array of values. All values are arrays too, after remove splitter "_".# Sub array content IP_ZABBIX-HOSTNAME_SSH-DAEMON-PORT
-cdate=`date +%d-%m-%Y` # System date =) Hi Max
+cdate=`date +%d-%m-%Y` # System date
 dir="/mik_backup/"# Storage for backups
 cmd="/system backup save name=backup; export file=backup.rsc hide-sensitive"# command that do the preparation of backup
 username="user"# SSH user
-zabbix_hp=(10.10.10.10 10051) # IP then PORT
+zabbix_hp=(10.151.48.126 10051) # IP then PORT
 age="30"# remove all backups older then 30 days
 itemname="backup"# zabbix item
 error_value="1"# error value for trigger
